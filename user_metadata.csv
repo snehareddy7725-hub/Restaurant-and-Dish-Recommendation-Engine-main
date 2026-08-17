@@ -1,0 +1,1001 @@
+user_id,fav_cuisines,price_pref
+0,"North Indian, Cafe",Low
+1,"Fast Food, Cafe",Mid
+2,"Cafe, Chinese",Mid
+3,"North Indian, Fast Food",Mid
+4,"North Indian, Fast Food",High
+5,"Cafe, Chinese",High
+6,"Fast Food, North Indian",Mid
+7,"North Indian, Italian",High
+8,"Chinese, Fast Food",Mid
+9,"North Indian, Cafe",High
+10,"Chinese, South Indian",Low
+11,"Cafe, Chinese",Mid
+12,"South Indian, North Indian",Low
+13,"Chinese, North Indian",Low
+14,"Fast Food, South Indian",Mid
+15,"South Indian, Chinese",High
+16,"Fast Food, North Indian",Low
+17,"Italian, South Indian",Low
+18,"Fast Food, Italian",Mid
+19,"Italian, Fast Food",Low
+20,"North Indian, Chinese",Mid
+21,"North Indian, Fast Food",High
+22,"Italian, South Indian",Low
+23,"Italian, North Indian",Low
+24,"South Indian, Italian",Low
+25,"Chinese, Cafe",Mid
+26,"Chinese, South Indian",High
+27,"North Indian, Italian",Mid
+28,"Chinese, Cafe",Low
+29,"Cafe, Chinese",Mid
+30,"Cafe, North Indian",Low
+31,"Italian, North Indian",Low
+32,"South Indian, Italian",Low
+33,"Chinese, Italian",Mid
+34,"Fast Food, Cafe",Low
+35,"Italian, North Indian",Low
+36,"North Indian, Chinese",High
+37,"South Indian, Cafe",Low
+38,"Fast Food, South Indian",Low
+39,"Fast Food, Chinese",Mid
+40,"Fast Food, Chinese",Mid
+41,"Italian, Fast Food",Mid
+42,"North Indian, Fast Food",Low
+43,"Fast Food, North Indian",Low
+44,"Cafe, Italian",Mid
+45,"Cafe, Fast Food",Low
+46,"Fast Food, North Indian",Mid
+47,"North Indian, Fast Food",Low
+48,"Fast Food, South Indian",Low
+49,"Chinese, North Indian",Mid
+50,"Italian, South Indian",Low
+51,"Fast Food, Italian",Low
+52,"South Indian, Chinese",Mid
+53,"Fast Food, South Indian",Low
+54,"Chinese, Cafe",Mid
+55,"Cafe, Italian",Low
+56,"South Indian, North Indian",Mid
+57,"Cafe, Italian",Low
+58,"Chinese, Italian",High
+59,"Italian, Cafe",High
+60,"Cafe, Fast Food",Mid
+61,"Italian, North Indian",Mid
+62,"Fast Food, Cafe",Mid
+63,"Fast Food, Italian",Mid
+64,"Chinese, Cafe",Mid
+65,"North Indian, South Indian",Mid
+66,"Fast Food, Cafe",High
+67,"Chinese, Cafe",Mid
+68,"Italian, South Indian",High
+69,"Chinese, North Indian",High
+70,"South Indian, Cafe",Low
+71,"Cafe, Italian",Low
+72,"Fast Food, Chinese",Mid
+73,"Italian, Fast Food",Mid
+74,"North Indian, Chinese",Low
+75,"North Indian, Cafe",Low
+76,"Cafe, North Indian",Mid
+77,"Chinese, South Indian",Mid
+78,"North Indian, Chinese",Mid
+79,"South Indian, Chinese",Mid
+80,"Chinese, Italian",Low
+81,"North Indian, Cafe",Mid
+82,"Chinese, North Indian",Low
+83,"Italian, Cafe",Mid
+84,"Cafe, Italian",Mid
+85,"Italian, Cafe",Low
+86,"Fast Food, South Indian",High
+87,"Chinese, North Indian",Low
+88,"Italian, South Indian",Low
+89,"South Indian, Fast Food",High
+90,"Fast Food, Chinese",Low
+91,"Fast Food, Italian",Low
+92,"Chinese, North Indian",High
+93,"South Indian, Fast Food",Mid
+94,"Italian, Cafe",Low
+95,"South Indian, Fast Food",Mid
+96,"Fast Food, Italian",High
+97,"South Indian, North Indian",Low
+98,"South Indian, Fast Food",High
+99,"South Indian, Chinese",Mid
+100,"Chinese, North Indian",Mid
+101,"Italian, Cafe",Mid
+102,"South Indian, Fast Food",Mid
+103,"Chinese, Fast Food",Mid
+104,"North Indian, South Indian",High
+105,"Cafe, Fast Food",Mid
+106,"South Indian, Italian",Low
+107,"Fast Food, North Indian",Low
+108,"Fast Food, North Indian",Low
+109,"Cafe, Italian",High
+110,"South Indian, North Indian",Low
+111,"Italian, Fast Food",High
+112,"South Indian, North Indian",Mid
+113,"South Indian, North Indian",High
+114,"North Indian, South Indian",Mid
+115,"Chinese, Fast Food",Low
+116,"Chinese, South Indian",Mid
+117,"Fast Food, Italian",Low
+118,"South Indian, Fast Food",Low
+119,"South Indian, Cafe",Low
+120,"Cafe, South Indian",Low
+121,"Chinese, Italian",Mid
+122,"Italian, Cafe",Low
+123,"Fast Food, North Indian",Mid
+124,"South Indian, Chinese",Low
+125,"Chinese, Fast Food",Mid
+126,"Chinese, Cafe",Low
+127,"South Indian, Cafe",Low
+128,"North Indian, Italian",Mid
+129,"Cafe, Italian",High
+130,"South Indian, Fast Food",Low
+131,"Italian, South Indian",Mid
+132,"Chinese, Italian",Low
+133,"North Indian, Chinese",Mid
+134,"Fast Food, South Indian",Low
+135,"Italian, Cafe",Low
+136,"South Indian, North Indian",Mid
+137,"South Indian, Italian",Mid
+138,"South Indian, Chinese",Low
+139,"South Indian, North Indian",Low
+140,"Italian, Cafe",Low
+141,"Fast Food, Cafe",Mid
+142,"Italian, South Indian",High
+143,"Cafe, South Indian",Mid
+144,"Italian, North Indian",High
+145,"Cafe, Italian",Mid
+146,"Chinese, Italian",Mid
+147,"South Indian, Chinese",Low
+148,"Fast Food, Cafe",Low
+149,"Cafe, South Indian",Low
+150,"Chinese, Fast Food",Mid
+151,"Chinese, Italian",Low
+152,"Chinese, South Indian",Low
+153,"Cafe, Chinese",Mid
+154,"Fast Food, South Indian",Low
+155,"South Indian, North Indian",Mid
+156,"South Indian, Cafe",High
+157,"Italian, Fast Food",Low
+158,"North Indian, Italian",Low
+159,"South Indian, Cafe",Low
+160,"Chinese, Fast Food",High
+161,"Fast Food, Cafe",High
+162,"Italian, South Indian",Low
+163,"South Indian, Cafe",Low
+164,"North Indian, South Indian",Low
+165,"South Indian, Cafe",Low
+166,"North Indian, South Indian",High
+167,"South Indian, Italian",High
+168,"Cafe, Fast Food",Low
+169,"Chinese, Cafe",Low
+170,"North Indian, Chinese",Low
+171,"Fast Food, Cafe",Low
+172,"South Indian, Italian",High
+173,"North Indian, Italian",Low
+174,"North Indian, South Indian",Mid
+175,"North Indian, Italian",High
+176,"South Indian, North Indian",Low
+177,"Fast Food, Cafe",Low
+178,"Fast Food, South Indian",Low
+179,"North Indian, Italian",Low
+180,"South Indian, Chinese",Low
+181,"South Indian, Fast Food",Low
+182,"Fast Food, Chinese",Low
+183,"Cafe, Italian",Mid
+184,"Chinese, Italian",Low
+185,"Cafe, South Indian",Mid
+186,"Cafe, North Indian",Mid
+187,"South Indian, Fast Food",Mid
+188,"Cafe, Fast Food",Low
+189,"South Indian, Chinese",Mid
+190,"Fast Food, Cafe",Mid
+191,"North Indian, Cafe",High
+192,"South Indian, North Indian",High
+193,"North Indian, Italian",Low
+194,"Cafe, Italian",Low
+195,"Chinese, Italian",Mid
+196,"Italian, South Indian",Low
+197,"Italian, Cafe",Mid
+198,"Chinese, Cafe",Low
+199,"Chinese, Fast Food",Low
+200,"South Indian, Chinese",Mid
+201,"Chinese, North Indian",Mid
+202,"South Indian, Italian",High
+203,"South Indian, Fast Food",Low
+204,"Italian, South Indian",Mid
+205,"Italian, Chinese",Low
+206,"South Indian, Chinese",High
+207,"Fast Food, Chinese",Low
+208,"Cafe, Chinese",High
+209,"South Indian, Italian",Mid
+210,"Fast Food, Chinese",Mid
+211,"South Indian, Chinese",High
+212,"North Indian, Cafe",High
+213,"Chinese, Cafe",Mid
+214,"Chinese, South Indian",Mid
+215,"North Indian, Chinese",Mid
+216,"North Indian, South Indian",Mid
+217,"Cafe, South Indian",Mid
+218,"South Indian, North Indian",Low
+219,"South Indian, Fast Food",Low
+220,"South Indian, Chinese",Mid
+221,"Cafe, Chinese",Mid
+222,"Fast Food, South Indian",Low
+223,"Cafe, Italian",Mid
+224,"Cafe, Fast Food",Low
+225,"Fast Food, South Indian",Low
+226,"Chinese, Cafe",Mid
+227,"Italian, Fast Food",Low
+228,"Italian, North Indian",Mid
+229,"South Indian, Italian",Mid
+230,"Chinese, Italian",Mid
+231,"North Indian, Chinese",Mid
+232,"Cafe, Fast Food",Low
+233,"Chinese, Cafe",Mid
+234,"North Indian, Italian",Low
+235,"North Indian, Italian",Low
+236,"Chinese, North Indian",High
+237,"Italian, North Indian",Low
+238,"Fast Food, South Indian",Low
+239,"Fast Food, Italian",Low
+240,"Italian, Fast Food",Low
+241,"South Indian, Cafe",Low
+242,"Italian, Chinese",Mid
+243,"Cafe, Fast Food",Low
+244,"Cafe, Chinese",Mid
+245,"Fast Food, South Indian",Low
+246,"Fast Food, Cafe",Mid
+247,"Cafe, Italian",Low
+248,"Italian, South Indian",Mid
+249,"North Indian, South Indian",Mid
+250,"Fast Food, Chinese",Mid
+251,"South Indian, Chinese",High
+252,"North Indian, Fast Food",Low
+253,"Cafe, Chinese",Mid
+254,"Fast Food, Chinese",Low
+255,"Fast Food, South Indian",Mid
+256,"Chinese, South Indian",Mid
+257,"North Indian, South Indian",Low
+258,"South Indian, Italian",Mid
+259,"Chinese, Cafe",Low
+260,"Fast Food, Chinese",Low
+261,"South Indian, Chinese",Mid
+262,"Italian, Cafe",Low
+263,"North Indian, Cafe",Mid
+264,"South Indian, North Indian",Low
+265,"Chinese, North Indian",Mid
+266,"Cafe, South Indian",Mid
+267,"Chinese, Fast Food",Mid
+268,"Italian, South Indian",Mid
+269,"Fast Food, Chinese",High
+270,"Chinese, North Indian",Low
+271,"Chinese, Fast Food",Low
+272,"Chinese, Italian",High
+273,"Fast Food, Italian",Low
+274,"Cafe, North Indian",High
+275,"Italian, South Indian",Mid
+276,"Italian, South Indian",Low
+277,"South Indian, North Indian",Low
+278,"South Indian, Fast Food",Mid
+279,"Fast Food, Italian",Mid
+280,"Fast Food, South Indian",Mid
+281,"Cafe, Italian",Mid
+282,"Fast Food, Chinese",Mid
+283,"Fast Food, Italian",Mid
+284,"South Indian, Chinese",High
+285,"Cafe, South Indian",Mid
+286,"Chinese, Italian",Low
+287,"Chinese, Cafe",High
+288,"Cafe, Chinese",Low
+289,"North Indian, Fast Food",Low
+290,"Fast Food, South Indian",Mid
+291,"Italian, Cafe",Low
+292,"North Indian, South Indian",Mid
+293,"Cafe, Italian",Low
+294,"Chinese, Italian",Low
+295,"Fast Food, Chinese",Low
+296,"North Indian, Fast Food",Low
+297,"Cafe, Italian",High
+298,"Italian, South Indian",High
+299,"Fast Food, Italian",High
+300,"Cafe, North Indian",High
+301,"Cafe, Fast Food",Low
+302,"Chinese, Cafe",Mid
+303,"South Indian, North Indian",Low
+304,"North Indian, Cafe",Low
+305,"Fast Food, Chinese",Mid
+306,"South Indian, North Indian",Mid
+307,"Cafe, South Indian",Mid
+308,"Cafe, South Indian",Mid
+309,"Fast Food, North Indian",Mid
+310,"Fast Food, Italian",Mid
+311,"North Indian, Fast Food",Low
+312,"Fast Food, North Indian",Mid
+313,"Fast Food, North Indian",Mid
+314,"Fast Food, Italian",Mid
+315,"Cafe, North Indian",Mid
+316,"Chinese, Fast Food",Low
+317,"Fast Food, Italian",Low
+318,"Italian, Cafe",Low
+319,"Fast Food, Chinese",Low
+320,"North Indian, Chinese",Low
+321,"North Indian, Cafe",Mid
+322,"Cafe, Chinese",High
+323,"South Indian, Chinese",Mid
+324,"Chinese, North Indian",Low
+325,"Italian, Chinese",High
+326,"Chinese, South Indian",Mid
+327,"Fast Food, Italian",High
+328,"North Indian, South Indian",Mid
+329,"North Indian, South Indian",Low
+330,"South Indian, North Indian",Low
+331,"North Indian, Cafe",Mid
+332,"South Indian, Cafe",Mid
+333,"Cafe, Fast Food",Mid
+334,"Chinese, Fast Food",Low
+335,"Chinese, South Indian",Mid
+336,"Chinese, Fast Food",Low
+337,"Fast Food, South Indian",High
+338,"South Indian, Cafe",Low
+339,"Fast Food, South Indian",Mid
+340,"South Indian, Chinese",Low
+341,"North Indian, South Indian",Mid
+342,"North Indian, Chinese",Low
+343,"Cafe, Chinese",Mid
+344,"Cafe, Italian",High
+345,"Chinese, North Indian",Low
+346,"South Indian, Cafe",Mid
+347,"South Indian, Cafe",Mid
+348,"Fast Food, North Indian",High
+349,"South Indian, Fast Food",Low
+350,"North Indian, Italian",Low
+351,"Fast Food, Cafe",Mid
+352,"Fast Food, Cafe",Low
+353,"South Indian, Chinese",Mid
+354,"Italian, Chinese",Mid
+355,"South Indian, North Indian",Low
+356,"Fast Food, Italian",Low
+357,"Chinese, Cafe",Low
+358,"Fast Food, Cafe",Low
+359,"North Indian, Chinese",Low
+360,"Cafe, South Indian",Low
+361,"Cafe, Chinese",Mid
+362,"South Indian, Cafe",Mid
+363,"Cafe, South Indian",Mid
+364,"Italian, North Indian",Low
+365,"Italian, Fast Food",Low
+366,"North Indian, Cafe",High
+367,"Fast Food, Chinese",Mid
+368,"North Indian, Cafe",High
+369,"Chinese, North Indian",Low
+370,"Fast Food, South Indian",Mid
+371,"North Indian, Fast Food",High
+372,"Italian, Cafe",Low
+373,"Chinese, North Indian",High
+374,"Chinese, Cafe",High
+375,"South Indian, North Indian",Mid
+376,"North Indian, Chinese",High
+377,"Italian, Chinese",Low
+378,"North Indian, Cafe",High
+379,"Chinese, Italian",Low
+380,"Cafe, North Indian",Mid
+381,"South Indian, Fast Food",Mid
+382,"Cafe, Italian",Low
+383,"Chinese, Cafe",Mid
+384,"South Indian, Fast Food",Low
+385,"North Indian, Fast Food",Mid
+386,"Chinese, North Indian",Mid
+387,"Fast Food, Italian",Mid
+388,"Chinese, Cafe",Low
+389,"Fast Food, Chinese",Low
+390,"Fast Food, Chinese",High
+391,"South Indian, Chinese",Mid
+392,"Cafe, North Indian",Low
+393,"Italian, Cafe",Mid
+394,"Cafe, South Indian",Mid
+395,"Cafe, Fast Food",High
+396,"Fast Food, South Indian",Mid
+397,"Chinese, Italian",High
+398,"South Indian, Italian",Low
+399,"Fast Food, South Indian",Mid
+400,"South Indian, Italian",Low
+401,"South Indian, Chinese",Low
+402,"Cafe, North Indian",Low
+403,"North Indian, Chinese",Low
+404,"North Indian, Cafe",Mid
+405,"Italian, North Indian",Mid
+406,"North Indian, Fast Food",Mid
+407,"Cafe, Chinese",Mid
+408,"North Indian, Fast Food",Low
+409,"Cafe, Chinese",Mid
+410,"Chinese, North Indian",High
+411,"North Indian, Italian",High
+412,"Chinese, North Indian",Mid
+413,"Cafe, South Indian",Low
+414,"South Indian, Chinese",Mid
+415,"Italian, South Indian",Mid
+416,"Fast Food, North Indian",High
+417,"South Indian, North Indian",Low
+418,"Cafe, North Indian",High
+419,"North Indian, Italian",Low
+420,"Italian, South Indian",Low
+421,"North Indian, South Indian",Mid
+422,"North Indian, Chinese",High
+423,"South Indian, Cafe",High
+424,"North Indian, Cafe",Low
+425,"Chinese, Italian",Mid
+426,"North Indian, Italian",Mid
+427,"Cafe, Fast Food",High
+428,"Fast Food, Cafe",High
+429,"South Indian, Cafe",Mid
+430,"North Indian, Italian",Mid
+431,"Chinese, North Indian",Low
+432,"Chinese, Italian",Low
+433,"Italian, South Indian",Low
+434,"Chinese, Cafe",Low
+435,"North Indian, Italian",Low
+436,"South Indian, Chinese",Mid
+437,"Italian, Fast Food",Low
+438,"North Indian, South Indian",Low
+439,"North Indian, South Indian",Low
+440,"South Indian, North Indian",Low
+441,"Italian, South Indian",Mid
+442,"Fast Food, South Indian",Mid
+443,"Cafe, Chinese",Mid
+444,"Chinese, Cafe",Mid
+445,"Fast Food, Chinese",Mid
+446,"Cafe, South Indian",Mid
+447,"North Indian, Chinese",Low
+448,"North Indian, South Indian",Mid
+449,"Italian, Fast Food",Low
+450,"Chinese, South Indian",Mid
+451,"North Indian, South Indian",Mid
+452,"North Indian, Cafe",High
+453,"Fast Food, Cafe",Low
+454,"Fast Food, North Indian",High
+455,"Chinese, North Indian",Low
+456,"Chinese, Italian",High
+457,"North Indian, Cafe",Mid
+458,"Chinese, Cafe",Mid
+459,"Cafe, South Indian",Mid
+460,"Chinese, Italian",Low
+461,"Fast Food, Chinese",High
+462,"Chinese, Cafe",High
+463,"Italian, South Indian",Mid
+464,"Cafe, South Indian",High
+465,"North Indian, South Indian",Low
+466,"Chinese, Fast Food",Low
+467,"Chinese, Fast Food",High
+468,"North Indian, South Indian",Low
+469,"Cafe, Chinese",High
+470,"North Indian, Italian",Low
+471,"Fast Food, Italian",Mid
+472,"Italian, Chinese",Low
+473,"North Indian, Italian",Mid
+474,"South Indian, Cafe",Low
+475,"Italian, North Indian",High
+476,"Chinese, Cafe",Low
+477,"Chinese, Fast Food",Low
+478,"Fast Food, North Indian",Low
+479,"Cafe, North Indian",Low
+480,"North Indian, Fast Food",Low
+481,"Chinese, South Indian",Low
+482,"Italian, South Indian",Low
+483,"South Indian, North Indian",Low
+484,"North Indian, Chinese",Mid
+485,"North Indian, Cafe",Low
+486,"Fast Food, Cafe",Mid
+487,"North Indian, Cafe",Mid
+488,"North Indian, Italian",Low
+489,"South Indian, Cafe",High
+490,"Chinese, Cafe",Mid
+491,"Fast Food, North Indian",Low
+492,"Chinese, South Indian",Low
+493,"Cafe, Fast Food",Mid
+494,"South Indian, Cafe",Low
+495,"Italian, Chinese",High
+496,"South Indian, Fast Food",Low
+497,"Chinese, Cafe",Low
+498,"North Indian, Italian",Mid
+499,"Cafe, Fast Food",Mid
+500,"North Indian, Cafe",Low
+501,"North Indian, Chinese",High
+502,"North Indian, Fast Food",High
+503,"Chinese, Cafe",Low
+504,"South Indian, Cafe",Low
+505,"Italian, South Indian",Mid
+506,"Cafe, Fast Food",High
+507,"North Indian, Italian",Mid
+508,"Chinese, North Indian",Mid
+509,"Italian, South Indian",Low
+510,"South Indian, Chinese",Mid
+511,"Cafe, North Indian",High
+512,"South Indian, Chinese",Mid
+513,"Italian, Fast Food",Low
+514,"Cafe, Chinese",Mid
+515,"Cafe, Italian",Low
+516,"Fast Food, Italian",Mid
+517,"Chinese, Fast Food",Low
+518,"North Indian, Fast Food",Low
+519,"South Indian, Chinese",Mid
+520,"Cafe, Chinese",Low
+521,"North Indian, Italian",Mid
+522,"Chinese, Cafe",Low
+523,"North Indian, South Indian",Low
+524,"Cafe, Chinese",High
+525,"Chinese, Fast Food",Mid
+526,"North Indian, South Indian",Low
+527,"Italian, South Indian",High
+528,"Fast Food, Italian",Low
+529,"South Indian, Fast Food",Mid
+530,"South Indian, Fast Food",Low
+531,"North Indian, South Indian",Low
+532,"Cafe, North Indian",High
+533,"South Indian, Fast Food",High
+534,"South Indian, Cafe",Low
+535,"Chinese, South Indian",High
+536,"Chinese, Fast Food",Mid
+537,"North Indian, Chinese",Mid
+538,"Italian, South Indian",Mid
+539,"Chinese, North Indian",Mid
+540,"Chinese, North Indian",Low
+541,"Fast Food, Chinese",Mid
+542,"Chinese, Cafe",Low
+543,"Italian, Chinese",Low
+544,"Italian, South Indian",Low
+545,"Italian, South Indian",Low
+546,"North Indian, South Indian",Mid
+547,"Italian, Cafe",Low
+548,"Chinese, Fast Food",Mid
+549,"Fast Food, North Indian",Low
+550,"North Indian, South Indian",Mid
+551,"South Indian, North Indian",Mid
+552,"South Indian, Fast Food",High
+553,"Fast Food, Chinese",Mid
+554,"Cafe, Chinese",High
+555,"South Indian, Cafe",Mid
+556,"Fast Food, North Indian",Low
+557,"Chinese, Fast Food",Low
+558,"Italian, North Indian",Mid
+559,"North Indian, South Indian",High
+560,"North Indian, Italian",Mid
+561,"Chinese, Fast Food",Mid
+562,"Italian, South Indian",High
+563,"Fast Food, Italian",Mid
+564,"Cafe, Chinese",Mid
+565,"Italian, Cafe",Mid
+566,"North Indian, South Indian",High
+567,"Cafe, South Indian",Mid
+568,"South Indian, North Indian",Mid
+569,"Italian, North Indian",Mid
+570,"Cafe, Chinese",High
+571,"South Indian, Fast Food",High
+572,"Cafe, Fast Food",Low
+573,"Italian, Cafe",Mid
+574,"South Indian, Italian",High
+575,"South Indian, Chinese",Low
+576,"Italian, Cafe",Low
+577,"Cafe, Italian",Mid
+578,"North Indian, Fast Food",Low
+579,"Fast Food, South Indian",Low
+580,"Fast Food, North Indian",High
+581,"Italian, South Indian",Mid
+582,"North Indian, Chinese",Mid
+583,"Fast Food, Chinese",High
+584,"Italian, Cafe",Low
+585,"Fast Food, Chinese",Mid
+586,"Chinese, North Indian",Mid
+587,"Fast Food, Cafe",Low
+588,"Italian, Chinese",Mid
+589,"Cafe, Italian",Low
+590,"South Indian, North Indian",Low
+591,"Italian, South Indian",High
+592,"South Indian, North Indian",Low
+593,"South Indian, Chinese",Low
+594,"Fast Food, North Indian",Low
+595,"Fast Food, Cafe",Mid
+596,"Fast Food, Chinese",Low
+597,"Fast Food, South Indian",Low
+598,"Chinese, Cafe",Mid
+599,"Fast Food, North Indian",Low
+600,"North Indian, Fast Food",Low
+601,"Cafe, Fast Food",High
+602,"Chinese, Fast Food",Mid
+603,"Cafe, Fast Food",Mid
+604,"Italian, Fast Food",Low
+605,"North Indian, Italian",Mid
+606,"North Indian, Fast Food",Low
+607,"Italian, Fast Food",Low
+608,"Italian, North Indian",Mid
+609,"Chinese, Fast Food",Low
+610,"South Indian, Chinese",High
+611,"Fast Food, North Indian",Mid
+612,"Fast Food, North Indian",Low
+613,"Italian, South Indian",High
+614,"Fast Food, Chinese",Mid
+615,"South Indian, North Indian",Mid
+616,"North Indian, Italian",Mid
+617,"Chinese, Cafe",High
+618,"Italian, Fast Food",Mid
+619,"Chinese, Cafe",Mid
+620,"Fast Food, Cafe",Mid
+621,"Chinese, North Indian",Low
+622,"Fast Food, North Indian",Low
+623,"Chinese, Italian",Low
+624,"Italian, Chinese",Mid
+625,"Fast Food, Cafe",High
+626,"South Indian, Cafe",Low
+627,"South Indian, North Indian",Low
+628,"Fast Food, Chinese",Mid
+629,"Chinese, South Indian",High
+630,"South Indian, Chinese",Mid
+631,"North Indian, Italian",Mid
+632,"Italian, Fast Food",Mid
+633,"Italian, Cafe",Low
+634,"Italian, North Indian",Mid
+635,"Cafe, North Indian",Low
+636,"Fast Food, Cafe",Mid
+637,"Italian, North Indian",Low
+638,"South Indian, Italian",Low
+639,"North Indian, Italian",Mid
+640,"South Indian, Chinese",Mid
+641,"North Indian, South Indian",Mid
+642,"Fast Food, South Indian",Mid
+643,"Chinese, Italian",Mid
+644,"North Indian, Italian",High
+645,"North Indian, South Indian",Low
+646,"North Indian, South Indian",Low
+647,"North Indian, Cafe",High
+648,"Chinese, South Indian",Low
+649,"Italian, Fast Food",Low
+650,"South Indian, Italian",High
+651,"Fast Food, Cafe",Mid
+652,"South Indian, Cafe",Low
+653,"Italian, Cafe",High
+654,"North Indian, Fast Food",High
+655,"Fast Food, Chinese",Mid
+656,"Fast Food, Cafe",Mid
+657,"Italian, Cafe",Mid
+658,"Cafe, Fast Food",Mid
+659,"South Indian, Chinese",Mid
+660,"North Indian, Cafe",Mid
+661,"Chinese, Italian",Low
+662,"Fast Food, Chinese",Mid
+663,"North Indian, Cafe",High
+664,"South Indian, North Indian",Mid
+665,"Fast Food, North Indian",High
+666,"South Indian, Fast Food",High
+667,"Chinese, Cafe",Mid
+668,"North Indian, Chinese",Low
+669,"Fast Food, Cafe",High
+670,"Italian, South Indian",Mid
+671,"North Indian, Fast Food",Mid
+672,"North Indian, Cafe",Low
+673,"Fast Food, Chinese",Mid
+674,"Chinese, Fast Food",Low
+675,"Cafe, Italian",Mid
+676,"South Indian, Italian",Mid
+677,"Cafe, Fast Food",High
+678,"North Indian, Fast Food",Mid
+679,"Cafe, Fast Food",Low
+680,"Fast Food, Italian",Mid
+681,"North Indian, Chinese",Low
+682,"South Indian, Fast Food",Low
+683,"Fast Food, South Indian",High
+684,"Fast Food, Chinese",Low
+685,"North Indian, Fast Food",Low
+686,"Chinese, South Indian",Mid
+687,"Fast Food, Chinese",Low
+688,"South Indian, Italian",Mid
+689,"Fast Food, Italian",Mid
+690,"South Indian, Cafe",High
+691,"Cafe, South Indian",Low
+692,"North Indian, Italian",Low
+693,"Chinese, Fast Food",Low
+694,"Fast Food, South Indian",Low
+695,"Cafe, Fast Food",Mid
+696,"South Indian, Cafe",High
+697,"Cafe, Italian",Mid
+698,"Chinese, Italian",Mid
+699,"Chinese, North Indian",Mid
+700,"South Indian, Chinese",Mid
+701,"Cafe, North Indian",Low
+702,"Chinese, South Indian",Mid
+703,"Cafe, South Indian",High
+704,"Chinese, Cafe",Mid
+705,"North Indian, Italian",High
+706,"Italian, Cafe",Mid
+707,"Cafe, Fast Food",Mid
+708,"Italian, Chinese",Mid
+709,"Fast Food, Italian",Mid
+710,"Chinese, Cafe",Mid
+711,"Italian, Fast Food",High
+712,"Chinese, Italian",Low
+713,"South Indian, North Indian",Low
+714,"Fast Food, North Indian",Low
+715,"Chinese, Italian",Mid
+716,"Cafe, Chinese",Mid
+717,"South Indian, Chinese",High
+718,"North Indian, South Indian",High
+719,"South Indian, Fast Food",Mid
+720,"Fast Food, North Indian",High
+721,"Cafe, Fast Food",Low
+722,"South Indian, Cafe",Mid
+723,"South Indian, Italian",Mid
+724,"South Indian, Fast Food",Mid
+725,"North Indian, South Indian",Mid
+726,"Fast Food, South Indian",Mid
+727,"Italian, Cafe",Mid
+728,"Fast Food, North Indian",Mid
+729,"Chinese, Italian",Mid
+730,"Fast Food, Cafe",High
+731,"North Indian, South Indian",Mid
+732,"Italian, Chinese",Low
+733,"Italian, South Indian",Mid
+734,"South Indian, Chinese",Low
+735,"South Indian, North Indian",Mid
+736,"Cafe, Italian",High
+737,"Fast Food, Chinese",High
+738,"Cafe, South Indian",Mid
+739,"Chinese, Fast Food",Mid
+740,"North Indian, Fast Food",High
+741,"North Indian, Cafe",High
+742,"South Indian, Chinese",Mid
+743,"South Indian, Chinese",Low
+744,"Chinese, North Indian",High
+745,"Cafe, Fast Food",Low
+746,"Cafe, South Indian",Low
+747,"Italian, South Indian",High
+748,"Italian, North Indian",Low
+749,"Cafe, South Indian",Low
+750,"Chinese, North Indian",High
+751,"Italian, Cafe",Mid
+752,"Cafe, Chinese",Mid
+753,"Italian, Cafe",Low
+754,"Fast Food, Italian",Mid
+755,"Chinese, Fast Food",High
+756,"Italian, South Indian",Low
+757,"Chinese, North Indian",Low
+758,"South Indian, Fast Food",Mid
+759,"Cafe, Italian",Low
+760,"Italian, Cafe",Mid
+761,"North Indian, Chinese",Low
+762,"Fast Food, South Indian",Mid
+763,"North Indian, Italian",Mid
+764,"Chinese, Italian",Low
+765,"Cafe, Chinese",High
+766,"Italian, Chinese",Mid
+767,"North Indian, Italian",High
+768,"North Indian, South Indian",Low
+769,"South Indian, Cafe",Low
+770,"Cafe, Fast Food",Low
+771,"South Indian, Chinese",Mid
+772,"South Indian, Chinese",High
+773,"Fast Food, Cafe",Mid
+774,"North Indian, Chinese",Low
+775,"Fast Food, Italian",High
+776,"Cafe, Chinese",Low
+777,"North Indian, Cafe",Mid
+778,"Italian, Chinese",Mid
+779,"Chinese, North Indian",High
+780,"Cafe, South Indian",Low
+781,"Chinese, South Indian",Mid
+782,"Italian, North Indian",Low
+783,"North Indian, Cafe",Mid
+784,"Chinese, South Indian",High
+785,"Fast Food, Chinese",High
+786,"North Indian, Fast Food",Low
+787,"Fast Food, South Indian",Low
+788,"Italian, South Indian",Low
+789,"South Indian, Cafe",High
+790,"South Indian, Italian",High
+791,"Italian, Chinese",Low
+792,"Cafe, South Indian",Low
+793,"Italian, South Indian",High
+794,"South Indian, Chinese",Low
+795,"Italian, North Indian",Low
+796,"Fast Food, South Indian",Low
+797,"Fast Food, Chinese",Mid
+798,"South Indian, Fast Food",Mid
+799,"North Indian, Italian",Low
+800,"Cafe, Italian",Low
+801,"Chinese, Italian",Low
+802,"Chinese, Italian",Mid
+803,"Italian, Chinese",High
+804,"Italian, Cafe",Low
+805,"Chinese, Fast Food",Low
+806,"Italian, Cafe",High
+807,"Cafe, Italian",Low
+808,"Italian, North Indian",Mid
+809,"South Indian, Fast Food",Low
+810,"Fast Food, Italian",High
+811,"Italian, Cafe",Mid
+812,"Cafe, Chinese",Low
+813,"Cafe, South Indian",Low
+814,"North Indian, Chinese",Low
+815,"North Indian, Chinese",Mid
+816,"Fast Food, South Indian",Mid
+817,"Fast Food, Chinese",Low
+818,"Chinese, Italian",High
+819,"Fast Food, Cafe",Low
+820,"South Indian, North Indian",Low
+821,"Italian, Fast Food",Mid
+822,"Cafe, Chinese",Mid
+823,"Italian, Chinese",Mid
+824,"North Indian, Cafe",Mid
+825,"North Indian, South Indian",Low
+826,"Italian, South Indian",Low
+827,"Fast Food, Italian",Mid
+828,"Chinese, Cafe",Low
+829,"Cafe, North Indian",High
+830,"Italian, Chinese",Mid
+831,"Fast Food, Cafe",Low
+832,"Cafe, South Indian",Mid
+833,"Fast Food, South Indian",Mid
+834,"Italian, Chinese",Low
+835,"Fast Food, Italian",High
+836,"Fast Food, Chinese",Low
+837,"Cafe, Fast Food",Mid
+838,"South Indian, Chinese",High
+839,"Italian, Cafe",Mid
+840,"North Indian, South Indian",High
+841,"Italian, Fast Food",Low
+842,"Fast Food, Cafe",High
+843,"South Indian, Chinese",High
+844,"South Indian, Fast Food",Low
+845,"Chinese, Italian",Mid
+846,"Chinese, South Indian",Mid
+847,"Chinese, Fast Food",Mid
+848,"Italian, Cafe",High
+849,"North Indian, Cafe",Low
+850,"Italian, Chinese",Low
+851,"Fast Food, Italian",Low
+852,"South Indian, Italian",Low
+853,"Chinese, South Indian",High
+854,"Italian, Cafe",Mid
+855,"Chinese, North Indian",Low
+856,"Chinese, North Indian",High
+857,"Italian, Chinese",High
+858,"Fast Food, Italian",Mid
+859,"Cafe, North Indian",Mid
+860,"Italian, South Indian",High
+861,"South Indian, North Indian",Low
+862,"Fast Food, Chinese",Mid
+863,"Fast Food, Italian",High
+864,"Cafe, North Indian",Low
+865,"Cafe, Italian",Mid
+866,"Italian, Chinese",Low
+867,"Fast Food, Italian",Low
+868,"Chinese, South Indian",Low
+869,"Italian, Cafe",Mid
+870,"North Indian, Fast Food",High
+871,"Cafe, Italian",Mid
+872,"South Indian, North Indian",High
+873,"South Indian, Cafe",High
+874,"North Indian, Fast Food",Low
+875,"Cafe, Fast Food",Low
+876,"South Indian, Fast Food",Low
+877,"Fast Food, Italian",Mid
+878,"Cafe, Chinese",Low
+879,"South Indian, Chinese",Low
+880,"Fast Food, Italian",Low
+881,"Chinese, Italian",Low
+882,"Fast Food, Chinese",Low
+883,"South Indian, Chinese",High
+884,"Italian, Chinese",Mid
+885,"Fast Food, Cafe",High
+886,"North Indian, Chinese",Mid
+887,"Cafe, Chinese",High
+888,"Italian, Chinese",Mid
+889,"Chinese, North Indian",Mid
+890,"Chinese, Cafe",Low
+891,"North Indian, Cafe",Mid
+892,"North Indian, South Indian",High
+893,"Chinese, North Indian",High
+894,"Fast Food, South Indian",Mid
+895,"North Indian, Italian",Low
+896,"Cafe, Italian",Mid
+897,"North Indian, Cafe",Mid
+898,"Italian, Fast Food",Mid
+899,"North Indian, South Indian",Low
+900,"Fast Food, Italian",Low
+901,"South Indian, North Indian",Mid
+902,"Chinese, Fast Food",Mid
+903,"Fast Food, North Indian",Low
+904,"South Indian, North Indian",Mid
+905,"Cafe, South Indian",Low
+906,"South Indian, North Indian",Low
+907,"Fast Food, Cafe",Low
+908,"Cafe, Italian",Low
+909,"South Indian, North Indian",Low
+910,"Italian, Cafe",High
+911,"Cafe, Fast Food",Mid
+912,"Italian, Chinese",High
+913,"Cafe, Italian",Low
+914,"South Indian, Chinese",Mid
+915,"Italian, North Indian",Mid
+916,"Chinese, North Indian",Low
+917,"North Indian, Italian",Mid
+918,"Italian, South Indian",Mid
+919,"South Indian, Cafe",Low
+920,"Fast Food, North Indian",Low
+921,"Italian, North Indian",Low
+922,"South Indian, North Indian",High
+923,"Italian, Cafe",Mid
+924,"South Indian, Cafe",High
+925,"Fast Food, Chinese",Low
+926,"Chinese, South Indian",Low
+927,"Italian, Chinese",Mid
+928,"Italian, South Indian",Mid
+929,"Fast Food, North Indian",High
+930,"South Indian, Cafe",Mid
+931,"Chinese, Italian",Mid
+932,"North Indian, Fast Food",Mid
+933,"Italian, Cafe",High
+934,"Cafe, Italian",Mid
+935,"Fast Food, North Indian",High
+936,"Cafe, Chinese",Low
+937,"Italian, Fast Food",High
+938,"Chinese, Fast Food",High
+939,"Fast Food, North Indian",Low
+940,"Fast Food, South Indian",Mid
+941,"Cafe, Chinese",Mid
+942,"South Indian, Cafe",High
+943,"South Indian, Cafe",High
+944,"Chinese, Italian",Low
+945,"Cafe, Italian",Mid
+946,"South Indian, North Indian",High
+947,"North Indian, Cafe",Mid
+948,"Fast Food, North Indian",Low
+949,"Cafe, Italian",Low
+950,"North Indian, Cafe",Mid
+951,"Cafe, Fast Food",Mid
+952,"Cafe, North Indian",Low
+953,"North Indian, South Indian",Mid
+954,"South Indian, North Indian",Low
+955,"North Indian, South Indian",Low
+956,"Chinese, North Indian",High
+957,"Fast Food, Chinese",High
+958,"Chinese, Cafe",Low
+959,"Fast Food, North Indian",High
+960,"Cafe, Italian",Low
+961,"Cafe, North Indian",Mid
+962,"Chinese, Italian",Low
+963,"Cafe, South Indian",High
+964,"North Indian, Chinese",Low
+965,"Chinese, Cafe",Low
+966,"South Indian, Cafe",Mid
+967,"Fast Food, North Indian",High
+968,"North Indian, Chinese",Mid
+969,"Cafe, Fast Food",Mid
+970,"Italian, North Indian",High
+971,"South Indian, Fast Food",Mid
+972,"Cafe, Fast Food",High
+973,"Italian, North Indian",Low
+974,"Fast Food, Chinese",Mid
+975,"North Indian, Cafe",Mid
+976,"Fast Food, Cafe",Low
+977,"North Indian, South Indian",Mid
+978,"Cafe, South Indian",Mid
+979,"South Indian, Cafe",Mid
+980,"Fast Food, Chinese",Mid
+981,"Chinese, South Indian",Mid
+982,"Fast Food, Chinese",Mid
+983,"Fast Food, South Indian",Low
+984,"Italian, Cafe",Mid
+985,"Italian, Fast Food",Mid
+986,"South Indian, Fast Food",Low
+987,"South Indian, Italian",High
+988,"South Indian, Cafe",Mid
+989,"Italian, North Indian",Low
+990,"Cafe, South Indian",Low
+991,"Chinese, Fast Food",Low
+992,"South Indian, North Indian",Mid
+993,"Italian, Chinese",Mid
+994,"Chinese, North Indian",High
+995,"North Indian, South Indian",Mid
+996,"Chinese, Italian",High
+997,"Fast Food, South Indian",Mid
+998,"Fast Food, Chinese",Low
+999,"Chinese, South Indian",Low

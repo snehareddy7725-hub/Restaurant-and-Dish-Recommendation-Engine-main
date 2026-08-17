@@ -1,0 +1,101 @@
+restaurant_id,name,cuisines,avg_cost_for_two,aggregate_rating,price_bucket
+1,Resto_1,South Indian,1277,3.4,Mid
+2,Resto_2,South Indian,1202,4.0,Mid
+3,Resto_3,South Indian,643,3.7,Low
+4,Resto_4,South Indian,812,4.6,Low
+5,Resto_5,Fast Food,1192,4.1,Mid
+6,Resto_6,Italian,463,2.9,Low
+7,Resto_7,South Indian,1276,2.7,Mid
+8,Resto_8,Italian,1795,4.0,High
+9,Resto_9,Italian,1203,2.6,Mid
+10,Resto_10,Chinese,1843,3.9,High
+11,Resto_11,Fast Food,204,4.8,Low
+12,Resto_12,South Indian,1326,3.9,Mid
+13,Resto_13,North Indian,1419,3.4,High
+14,Resto_14,Cafe,973,4.0,Low
+15,Resto_15,North Indian,1076,3.6,Mid
+16,Resto_16,Fast Food,1191,3.8,Mid
+17,Resto_17,Cafe,1083,4.8,Mid
+18,Resto_18,Fast Food,1573,3.4,High
+19,Resto_19,Italian,246,4.8,Low
+20,Resto_20,Cafe,1066,4.7,Mid
+21,Resto_21,Italian,1022,3.0,Mid
+22,Resto_22,North Indian,1135,2.7,Mid
+23,Resto_23,North Indian,855,2.7,Low
+24,Resto_24,Cafe,468,2.5,Low
+25,Resto_25,Cafe,569,2.7,Low
+26,Resto_26,South Indian,835,4.1,Low
+27,Resto_27,Fast Food,1329,2.7,High
+28,Resto_28,South Indian,1893,3.3,High
+29,Resto_29,Fast Food,1882,4.5,High
+30,Resto_30,South Indian,856,2.6,Low
+31,Resto_31,Italian,319,4.5,Low
+32,Resto_32,Cafe,1030,3.2,Mid
+33,Resto_33,North Indian,1827,2.8,High
+34,Resto_34,Fast Food,1281,4.2,Mid
+35,Resto_35,Fast Food,1569,4.0,High
+36,Resto_36,North Indian,940,4.6,Low
+37,Resto_37,South Indian,1697,4.3,High
+38,Resto_38,Fast Food,316,4.4,Low
+39,Resto_39,Italian,990,3.2,Mid
+40,Resto_40,Cafe,1350,2.9,High
+41,Resto_41,North Indian,1616,4.3,High
+42,Resto_42,Cafe,1212,4.4,Mid
+43,Resto_43,Fast Food,1864,4.9,High
+44,Resto_44,Fast Food,1281,3.5,Mid
+45,Resto_45,North Indian,833,3.4,Low
+46,Resto_46,Italian,712,4.4,Low
+47,Resto_47,Chinese,1974,3.3,High
+48,Resto_48,North Indian,1001,4.7,Mid
+49,Resto_49,Chinese,1319,4.6,Mid
+50,Resto_50,South Indian,1861,3.5,High
+51,Resto_51,Chinese,1341,4.3,High
+52,Resto_52,Italian,759,4.3,Low
+53,Resto_53,South Indian,1824,2.7,High
+54,Resto_54,Chinese,687,4.7,Low
+55,Resto_55,South Indian,1460,3.7,High
+56,Resto_56,Chinese,1096,4.5,Mid
+57,Resto_57,Italian,1495,3.3,High
+58,Resto_58,Chinese,1412,4.6,High
+59,Resto_59,Chinese,903,3.4,Low
+60,Resto_60,Chinese,1670,2.5,High
+61,Resto_61,North Indian,780,4.7,Low
+62,Resto_62,North Indian,989,2.7,Mid
+63,Resto_63,North Indian,1060,3.3,Mid
+64,Resto_64,Italian,446,4.8,Low
+65,Resto_65,South Indian,1299,4.8,Mid
+66,Resto_66,Fast Food,353,3.9,Low
+67,Resto_67,Chinese,1879,4.0,High
+68,Resto_68,Chinese,1658,3.6,High
+69,Resto_69,Italian,1196,3.2,Mid
+70,Resto_70,Chinese,1309,3.3,Mid
+71,Resto_71,North Indian,896,4.1,Low
+72,Resto_72,Fast Food,1508,4.3,High
+73,Resto_73,Cafe,1443,4.4,High
+74,Resto_74,Chinese,1292,4.4,Mid
+75,Resto_75,North Indian,1270,2.7,Mid
+76,Resto_76,Cafe,1208,3.7,Mid
+77,Resto_77,Fast Food,293,2.6,Low
+78,Resto_78,Cafe,1973,3.8,High
+79,Resto_79,North Indian,1157,3.6,Mid
+80,Resto_80,South Indian,1211,4.6,Mid
+81,Resto_81,South Indian,652,3.3,Low
+82,Resto_82,Cafe,1427,2.8,High
+83,Resto_83,Italian,1111,2.8,Mid
+84,Resto_84,Cafe,417,4.3,Low
+85,Resto_85,Chinese,673,4.0,Low
+86,Resto_86,Chinese,631,2.7,Low
+87,Resto_87,South Indian,540,2.7,Low
+88,Resto_88,Italian,750,4.2,Low
+89,Resto_89,North Indian,1835,2.7,High
+90,Resto_90,Chinese,1512,4.5,High
+91,Resto_91,South Indian,1477,4.2,High
+92,Resto_92,Fast Food,1957,2.7,High
+93,Resto_93,South Indian,556,2.7,Low
+94,Resto_94,Chinese,222,4.9,Low
+95,Resto_95,Chinese,1985,3.4,High
+96,Resto_96,South Indian,721,3.4,Low
+97,Resto_97,North Indian,1981,4.5,High
+98,Resto_98,Cafe,1323,4.8,Mid
+99,Resto_99,Chinese,1001,4.9,Mid
+100,Resto_100,South Indian,1403,4.3,High
