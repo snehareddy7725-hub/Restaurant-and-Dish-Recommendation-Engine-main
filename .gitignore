@@ -1,0 +1,9 @@
+__pycache__/
+*.pyc
+.pytest_cache/
+logs/
+data/new_interactions.csv
+data/*.tmp
+data/training_state.json
+venv/
+.DS_Store

@@ -1,0 +1,8 @@
+.git
+__pycache__/
+*.pyc
+logs/
+tests/
+.pytest_cache/
+data/new_interactions.csv
+data/*.tmp

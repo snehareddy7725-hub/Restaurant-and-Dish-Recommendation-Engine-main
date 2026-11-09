@@ -1,0 +1,13 @@
+services:
+  recommender-api:
+    build: .
+    ports:
+      - "8000:8000"
+    environment:
+      RECO_RETRAIN_THRESHOLD: "500"   # retrain after 500 new interactions
+      RECO_AUTO_RETRAIN: "true"
+    volumes:
+      - reco-data:/app/data           # keeps logged interactions + retrained models
+      - ./logs:/app/logs              # request logs (requests.jsonl)
+volumes:
+  reco-data:

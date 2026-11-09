@@ -1,0 +1,11 @@
+# Core model + API (tested on Python 3.13)
+numpy==2.5.3
+pandas==3.0.5
+pyarrow==26.0.1
+scipy==1.18.1
+scikit-learn==1.9.1
+implicit==0.7.3
+threadpoolctl==3.7.0
+fastapi==0.162.2
+uvicorn==0.54.0
+pydantic==2.13.5

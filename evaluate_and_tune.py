@@ -13,6 +13,8 @@ leakage-free number.
 """
 
 import pickle
+import warnings
+warnings.filterwarnings("ignore")
 import itertools
 import numpy as np
 import pandas as pd
@@ -92,7 +94,7 @@ reg_options = [0.001, 0.01, 0.1]
 best_als_hr, best_factors, best_reg, best_als_model = -1, None, None, None
 for factors, reg in itertools.product(factor_options, reg_options):
     model = AlternatingLeastSquares(factors=factors, regularization=reg, iterations=50, alpha=1.0, random_state=RANDOM_SEED)
-    model.fit(train_matrix)
+    model.fit(train_matrix, show_progress=False)
     hr = als_only_hit_rate(model, validation_rows)
     marker = ""
     if hr > best_als_hr:
@@ -109,11 +111,12 @@ als_model = best_als_model  # use best model going forward
 # ============================================================
 # Helper: build score dicts (ALS + content, both variants)
 # ============================================================
-def get_als_scores(uid, n=20):
+def get_als_scores(uid, n=20, model=None):
+    model = model or als_model
     if uid not in user_mapper:
         return {}
     uidx = user_mapper[uid]
-    ids, scores = als_model.recommend(uidx, train_matrix[uidx], N=n, filter_already_liked_items=True)
+    ids, scores = model.recommend(uidx, train_matrix[uidx], N=n, filter_already_liked_items=True)
     raw = {item_inv_mapper[i]: float(s) for i, s in zip(ids, scores) if i in item_inv_mapper}
     max_s = max(raw.values()) if raw else 1
     return {rid: s / max_s for rid, s in raw.items()}
@@ -155,13 +158,13 @@ print("\n" + "=" * 60)
 print("STAGE B: Fine-grained blend weight search")
 print("=" * 60)
 
-def weighted_hit_rate(w_als, rows, content_fn):
+def weighted_hit_rate(w_als, rows, content_fn, model=None):
     w_content = 1 - w_als
     hits, n = 0, 0
     for _, row in rows.iterrows():
         uid, held = row["user_id"], row["restaurant_id"]
         n += 1
-        als_s = get_als_scores(uid)
+        als_s = get_als_scores(uid, model=model)
         cont_s = content_fn(uid)
         all_ids = set(als_s) | set(cont_s)
         if not all_ids:
@@ -256,9 +259,25 @@ if use_rrf:
 else:
     final_test_hr = weighted_hit_rate(best_w, test_rows, best_content_fn)
 
-baseline_test_hr = weighted_hit_rate(0.5, test_rows, get_content_scores_single)
+# Baseline = the configuration BEFORE any tuning: the original ALS settings
+# (factors=20, regularization=0.01) with a plain 50/50 blend.
+untuned_als = AlternatingLeastSquares(factors=20, regularization=0.01, iterations=50, alpha=1.0, random_state=RANDOM_SEED)
+untuned_als.fit(train_matrix, show_progress=False)
+baseline_test_hr = weighted_hit_rate(0.5, test_rows, get_content_scores_single, model=untuned_als)
 
-print(f"\nOriginal baseline (default ALS, 50/50 weight, single-item seed): {baseline_test_hr*100:.2f}%")
-print(f"Fully tuned pipeline:                                             {final_test_hr*100:.2f}%")
-print(f"Improvement: {(final_test_hr - baseline_test_hr)*100:+.2f} percentage points")
+# Reference points on the same TEST users
+train_seen = train_rows.groupby("user_id")["restaurant_id"].apply(set)
+popular = train_rows.groupby("restaurant_id")["strength"].sum().sort_values(ascending=False).index
+pop_hits = [row.restaurant_id in [r for r in popular if r not in train_seen.get(row.user_id, set())][:K]
+            for row in test_rows.itertuples()]
+popularity_hr = float(np.mean(pop_hits))
+als_only_test_hr = als_only_hit_rate(als_model, test_rows)
+content_only_test_hr = weighted_hit_rate(0.0, test_rows, get_content_scores_single)
+
+print(f"\nPopularity baseline:                                {popularity_hr*100:.2f}%")
+print(f"ALS only (tuned):                                   {als_only_test_hr*100:.2f}%")
+print(f"Content only:                                       {content_only_test_hr*100:.2f}%")
+print(f"Untuned hybrid (ALS reg=0.01, 50/50 blend):         {baseline_test_hr*100:.2f}%")
+print(f"Tuned hybrid (final pipeline):                      {final_test_hr*100:.2f}%")
+print(f"Improvement from tuning: {(final_test_hr - baseline_test_hr)*100:+.2f} percentage points")
 print("=" * 60)
