@@ -29,6 +29,32 @@ Reproduce with `python evaluate_and_tune.py`.
 3. Content seed: last 1 item (35.8%) vs average of last 3 (31.0%) → last 1
 4. Combination: weighted average (35.8%) vs Reciprocal Rank Fusion (32.2%) → weighted average
 
+The tuned hybrid's **NDCG@10 is 0.179** (`python experiments/evaluate_hybrid.py --data-dir data --factors 10 20 30 50 --regs 0.001 0.01 0.1` reproduces every number above and adds NDCG).
+
+---
+
+## Further experiments
+
+### Hiding more than one interaction (`experiments/leave_k_out.py`)
+| Hidden per user | Hit Rate@10 | Recall@10 | Precision@10 | NDCG@10 |
+|---|---|---|---|---|
+| 1 | 35.8% | 35.8% | 3.6% | 0.179 |
+| 2 | 57.0% | 35.0% | 6.8% | 0.220 |
+| 3 | 72.2% | 36.4% | 10.1% | 0.254 |
+
+Hit Rate doubles when 3 items are hidden, but Recall stays at about 36%: the model did not improve, the test just gave it more chances. Hit Rates are only comparable under the same protocol.
+
+### Real data: Yelp (`experiments/yelp/`)
+The same pipeline (ALS + content hybrid, validation/test split, tuning stages) on real restaurant reviews from the [Yelp Open Dataset](https://www.yelp.com/dataset). Restaurants in one city; each review is an interaction whose strength comes from its stars (4–5 → 3, 3 → 2, 1–2 → 1); interactions are **time-ordered**, so the held-out item is each user's most recent review; users and restaurants with too few reviews are filtered out (5 and 10).
+
+Results: [`experiments/yelp/RESULTS.md`](experiments/yelp/RESULTS.md). Reproduce:
+```bash
+# download and extract the Yelp Open Dataset first (yelp.com/dataset)
+python experiments/yelp/prepare_yelp.py --yelp-dir path/to/yelp --out data_yelp
+python experiments/evaluate_hybrid.py --data-dir data_yelp --md experiments/yelp/RESULTS.md --title "Yelp results"
+```
+The Yelp data itself is not included in this repo (Yelp's dataset terms do not allow redistribution).
+
 ---
 
 ## How it works
@@ -116,7 +142,11 @@ pytest                            # tests
 ├── app.py                   Streamlit demo
 ├── train_models.py          offline training entry point
 ├── evaluate_and_tune.py     tuning + Hit Rate@10 evaluation
-├── tests/                   engine + API end-to-end tests
+├── experiments/
+│   ├── evaluate_hybrid.py   vectorised evaluation for any dataset (Hit Rate + NDCG)
+│   ├── leave_k_out.py       hiding 1, 2 or 3 interactions per user
+│   └── yelp/                Yelp converter + results
+├── tests/                   engine, API and Yelp-converter tests
 ├── Dockerfile, docker-compose.yml
 └── data/                    interactions, restaurants, user metadata, trained models
 ```
@@ -125,6 +155,6 @@ pytest                            # tests
 An earlier ALS model had `user_factors` of shape (100, 20) and `item_factors` of shape (1000, 20), swapped with the real counts, because the matrix passed to `.fit()` was items × users. Training now builds the matrix explicitly as users × items, and asserts both factor shapes before saving (see `recommender/training.py` and `tests/test_engine.py`).
 
 ## Limitations and next steps
-- The data is synthetic (no timestamps). Next: a real dataset and a time-based split.
-- 64% of held-out items are restaurants the user had already interacted with. ALS filters seen items, the content model does not, so part of the hybrid's gain comes from repeat orders.
-- Next: NDCG/MRR, a learning-to-rank stage, and ANN search (FAISS) for large catalogues.
+- The main data is synthetic and cleaner than real behaviour, so its numbers are optimistic. The Yelp experiment checks the same pipeline on real, time-ordered data.
+- 64% of held-out items in the synthetic data are restaurants the user had already interacted with. ALS filters seen items, the content model does not, so part of the hybrid's gain comes from repeat orders. (Yelp users rarely review the same place twice, so the evaluation also reports a variant that excludes seen restaurants.)
+- Next: a learning-to-rank stage, and ANN search (FAISS) for large catalogues.

@@ -7,3 +7,7 @@ data/*.tmp
 data/training_state.json
 venv/
 .DS_Store
+
+# Yelp data (not redistributable under the Yelp dataset terms)
+data_yelp/
+yelp_academic_dataset_*.json
