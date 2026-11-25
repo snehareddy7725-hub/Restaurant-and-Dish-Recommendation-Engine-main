@@ -47,11 +47,24 @@ Hit Rate doubles when 3 items are hidden, but Recall stays at about 36%: the mod
 ### Real data: Yelp (`experiments/yelp/`)
 The same pipeline (ALS + content hybrid, validation/test split, tuning stages) on real restaurant reviews from the [Yelp Open Dataset](https://www.yelp.com/dataset). Restaurants in one city; each review is an interaction whose strength comes from its stars (4–5 → 3, 3 → 2, 1–2 → 1); interactions are **time-ordered**, so the held-out item is each user's most recent review; users and restaurants with too few reviews are filtered out (5 and 10).
 
-Results: [`experiments/yelp/RESULTS.md`](experiments/yelp/RESULTS.md). Reproduce:
+| Model (Philadelphia: 26,251 users, 4,145 restaurants, 5,000 test users) | Hit Rate@10 | NDCG@10 |
+|---|---|---|
+| Popularity baseline | 4.46% | 0.024 |
+| Original hybrid, tuned (v1: ALS + one cuisine label, last item) | 6.52% | 0.034 |
+| ALS only, retuned (50 factors, reg 1.0, **alpha 10**) | 6.66% | 0.035 |
+| Content only / location only | 0.82% / 2.02% | 0.004 / 0.010 |
+| **Improved hybrid (v2): ALS 0.6 + content 0.1 + location 0.2 + popularity 0.1** | **7.76%** | **0.039** |
+
+What the real data showed:
+- **Scores are lower than on synthetic data, as expected:** 4,145 restaurants instead of 100 and 0.37% density instead of 20% (random guessing would score about 0.24%).
+- **The v1 content features were too coarse.** On synthetic data, users were generated from cuisine and price, so content looked strong (31.6%); on Yelp it scored 0.8% and v1 tuning gave it almost no weight (0.96 ALS).
+- **v2 improved the hybrid by 19% (6.52% → 7.76%)** through two changes: tuning ALS's confidence scaling (alpha 10 instead of 1, which also made 50 factors beat 20), and blending in weak but complementary signals (all categories with a taste profile, distance to the user's usual places, popularity). Each is far below ALS alone, but together they add over a point.
+- Unlike food delivery orders, people rarely review the same place twice (5.7% repeats vs 64% in the synthetic data).
+
+Full tables: [`RESULTS.md`](experiments/yelp/RESULTS.md) (v1) and [`RESULTS_v2.md`](experiments/yelp/RESULTS_v2.md) (v2, `experiments/evaluate_hybrid_v2.py`). Reproduce (about 20 minutes, e.g. in a Kaggle notebook with the Yelp dataset attached):
 ```bash
 # download and extract the Yelp Open Dataset first (yelp.com/dataset)
-python experiments/yelp/prepare_yelp.py --yelp-dir path/to/yelp --out data_yelp
-python experiments/evaluate_hybrid.py --data-dir data_yelp --md experiments/yelp/RESULTS.md --title "Yelp results"
+bash experiments/yelp/run_yelp.sh path/to/yelp   # convert, then evaluate v1 and v2
 ```
 The Yelp data itself is not included in this repo (Yelp's dataset terms do not allow redistribution).
 
@@ -144,6 +157,7 @@ pytest                            # tests
 ├── evaluate_and_tune.py     tuning + Hit Rate@10 evaluation
 ├── experiments/
 │   ├── evaluate_hybrid.py   vectorised evaluation for any dataset (Hit Rate + NDCG)
+│   ├── evaluate_hybrid_v2.py  improved hybrid: alpha/BM25, categories, location, popularity
 │   ├── leave_k_out.py       hiding 1, 2 or 3 interactions per user
 │   └── yelp/                Yelp converter + results
 ├── tests/                   engine, API and Yelp-converter tests
@@ -157,4 +171,4 @@ An earlier ALS model had `user_factors` of shape (100, 20) and `item_factors` of
 ## Limitations and next steps
 - The main data is synthetic and cleaner than real behaviour, so its numbers are optimistic. The Yelp experiment checks the same pipeline on real, time-ordered data.
 - 64% of held-out items in the synthetic data are restaurants the user had already interacted with. ALS filters seen items, the content model does not, so part of the hybrid's gain comes from repeat orders. (Yelp users rarely review the same place twice, so the evaluation also reports a variant that excludes seen restaurants.)
-- Next: a learning-to-rank stage, and ANN search (FAISS) for large catalogues.
+- Next: richer content (review-text embeddings), a learning-to-rank stage instead of fixed blend weights, real food-delivery orders (e.g. the Delivery Hero dataset), and ANN search (FAISS) for large catalogues.
