@@ -23,7 +23,8 @@ How Yelp is mapped onto the project:
   * Iterative k-core filter: keep users and restaurants with at least
     --min-user / --min-rest interactions, so every user has some history.
   * Content features: primary cuisine, price level (RestaurantsPriceRange2,
-    1-4) and the restaurant's average star rating.
+    1-4) and the restaurant's average star rating. All categories and the
+    latitude/longitude are also saved for the improved model (v2).
 
 Run:
     python experiments/yelp/prepare_yelp.py --yelp-dir ~/Downloads/yelp --out data_yelp
@@ -48,6 +49,7 @@ CUISINES = [
     "Cafes", "Bakeries", "Desserts", "American (New)", "American (Traditional)",
 ]
 SUSHI_TO = {"Sushi Bars": "Japanese"}
+GENERIC = {"Restaurants", "Food"}  # on every restaurant, so they carry no information
 
 
 def primary_cuisine(categories: str) -> str:
@@ -86,6 +88,11 @@ def load_restaurants(path: Path) -> pd.DataFrame:
                 "price_level": price_level(b.get("attributes")),
                 "aggregate_rating": float(b.get("stars", 0)),
                 "review_count": int(b.get("review_count", 0)),
+                "categories": "|".join(sorted(
+                    c.strip() for c in (b.get("categories") or "").split(",")
+                    if c.strip() and c.strip() not in GENERIC)),
+                "latitude": b.get("latitude"),
+                "longitude": b.get("longitude"),
             })
     return pd.DataFrame(rows)
 
@@ -162,6 +169,10 @@ def main():
         "avg_cost_for_two": kept_rest["price_level"],  # Yelp price level 1-4 (the model min-max scales it)
         "aggregate_rating": kept_rest["aggregate_rating"],
         "price_bucket": kept_rest["price_level"].map({1: "Low", 2: "Mid", 3: "High", 4: "High"}),
+        # extra columns used by experiments/evaluate_hybrid_v2.py
+        "categories": kept_rest["categories"],
+        "latitude": kept_rest["latitude"],
+        "longitude": kept_rest["longitude"],
     })
 
     interactions.to_csv(out / "interactions.csv", index=False)
